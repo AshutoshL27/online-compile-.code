@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Tektur:wght@800&display=swap');
+
+/*
+font-family: 'Tektur', cursive; 
+font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.2rem;
+  background-color: rgb(19, 19, 19);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.navbar h1 {
+  margin: 0;
+  color: rgb(238, 238, 238);
+  font-family: 'Tektur', cursive;
+}
+
+.linksContainer{
+  min-width: 16.6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0.6rem;
+}
+
+.link{
+  text-decoration: none;
+  color: rgba(194, 194, 194, 0.877);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+.link:hover{
+  color: white;
+  filter: drop-shadow(0 0 6px white);
+}
+
+.link.active{
+  color: white;
+  filter: drop-shadow(0 0 6px white);
+  transform: translateY(-4px);
+}

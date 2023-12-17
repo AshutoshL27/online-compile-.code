@@ -1,0 +1,21 @@
+.selector{
+    min-width: 160px;
+    align-self: flex-start;
+    padding: 0;
+    font-size: 0.9rem;
+    height: 1.6rem !important;
+}
+
+.css-13cymwt-control{
+    height: 1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.css-1xc3v61-indicatorContainer{
+    padding: 0.5rem !important;
+}
+
+.css-1hb7zxy-IndicatorsContainer{
+    height: 2.2rem !important;
+}

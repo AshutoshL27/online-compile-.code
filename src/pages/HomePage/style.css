@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Tektur:wght@800&display=swap");
+
+/*
+font-family: 'Tektur', cursive; 
+font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+.changing {
+  font-size: 5vmin;
+  color: rgba(37, 41, 46, 0.89);
+  text-align: left;
+  font-family: 'Righteous', cursive;
+  font-weight: 700;
+  margin: 0.2rem 0 1rem 2rem;
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h1 {
+    margin: 0;
+    color: rgb(172, 166, 166);
+  font-size: 6rem;
+  font-family: "Tektur", cursive;
+}
+
+.infoContainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.infoContainer p{
+    margin-right: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.optionContainer{
+    margin: 3rem auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.webOption, .devOption{
+    margin: 2rem auto;
+    padding: 0;
+    width: 300px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.webOption h3, .devOption h3{
+    margin: 0;
+    color: rgb(172, 166, 166);
+    font-family: 'Righteous', cursive;
+    letter-spacing: 0.1rem;
+}
+
+.webOption p, .devOption p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+.webOption button, .devOption button{
+    border: 2px solid transparent;
+    outline: none;
+    padding: 0.6rem 1rem;
+    min-width: 100px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.webOption button{
+    background-color: rgb(211, 153, 45);
+    color: rgb(240, 240, 240);
+}
+
+.webOption button:hover{
+    border: 2px solid rgb(211, 153, 45);
+    background-color: transparent;
+    color: rgb(211, 153, 45);
+    box-shadow: 0 0 6px rgb(211, 153, 45);
+}
+
+.devOption button{
+    background-color: rgb(75, 75, 148);
+    color: rgb(240, 240, 240);
+}
+
+.devOption button:hover{
+    border: 2px solid rgb(75, 75, 148);
+    background-color: transparent;
+    color: rgb(75, 75, 148);
+    box-shadow: 0 0 6px rgb(75, 75, 148);
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+  1.1395%,
+  26.2093% {
+    content: "E";
+  }
+  2.2791%,
+  25.0698% {
+    content: "Ea";
+  }
+  3.4186%,
+  23.9302% {
+    content: "Eat";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "";
+  }
+  31.9070%,
+  50.1395% {
+    content: "S";
+  }
+  33.0465%,
+  49.0000% {
+    content: "Sl";
+  }
+  34.1860%,
+  47.8605% {
+    content: "Sle";
+  }
+  35.3256%,
+  46.7209% {
+    content: "Slee";
+  }
+  36.4651%,
+  45.5814% {
+    content: "Sleep";
+  }
+
+  54.6977%,
+  75.2093% {
+    content: "";
+  }
+  55.8372%,
+  74.0698% {
+    content: ".";
+  }
+  56.9767%,
+  72.9302% {
+    content: ".&";
+  }
+  58.1163%,
+  71.7907% {
+    content: ".& ";
+  }
+  59.2558%,
+  70.6512% {
+    content: ".& C";
+  }
+  60.3953%,
+  69.5116% {
+    content: ".& Co";
+  }
+  61.5349%,
+  68.3721% {
+    content: ".& Cod";
+  }
+  63.1149%,
+  66.9021% {
+    content: ".& Cod";
+  }
+  63.4349%,
+  65.7721% {
+    content: ".& Code";
+  }
+
+  78.6279%,
+  96.8605% {
+    content: "";
+  }
+  79.7674%,
+  95.7209% {
+    content: ".";
+  }
+  80.9070%,
+  94.5814% {
+    content: "..";
+  }
+  82.0465%,
+  93.4419% {
+    content: "...";
+  }
+  83.1860%,
+  92.3023% {
+    content: "....";
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+    0%,
+    100% {
+      content: "Eat";
+    }
+    25% {
+      content: "Sleep";
+    }
+    50% {
+      content: ".& Code";
+    }
+    75% {
+      content: "....";
+    }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}

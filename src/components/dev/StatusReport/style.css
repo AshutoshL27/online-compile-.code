@@ -1,0 +1,18 @@
+.status{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.holder{
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.report{
+    font-weight: normal;
+    font-size: 0.8rem;
+}

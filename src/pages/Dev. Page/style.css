@@ -1,0 +1,49 @@
+.Dev{
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    margin: 1rem 0.5rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 56.2%;
+}
+
+.rightContainer{
+    margin-right: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 41.2%;
+    height: 74dvh;
+}
+
+.submitButton{
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    height: 2rem;
+    width: auto;
+    box-shadow: 2px 3px 2px 1px black;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.submitButton:hover{
+    box-shadow: inset 0 0 3px black;
+}
+

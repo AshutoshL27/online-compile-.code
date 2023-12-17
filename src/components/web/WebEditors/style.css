@@ -1,0 +1,55 @@
+.title-left{
+    min-width: 90px !important;
+    background-color: rgb(30, 30, 30);
+    padding-top: 0.28rem;
+    font-weight: 500;
+    text-align: center;
+}
+.title-left.html{
+    color: rgb(238, 145, 24);
+}
+.title-left.css{
+    color: rgb(42, 142, 235);
+}
+.title-left.js{
+    color: rgb(226, 240, 33);
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(226, 226, 226);
+    background-color: rgb(0, 0, 0);
+}
+
+.icon{
+    cursor: pointer;
+    margin: 0 0.2rem;
+}
+
+.refreshIcon{
+    transform: scale(0.8);
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+.editor-Container{
+    width: 500px;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* .monacoEditor.monaco-mouse-cursor-text{
+    position: absolute;
+     font-family: Consolas, "Courier New", monospace;
+      font-weight: normal; font-size: 14px; 
+      font-feature-settings: "liga" 0, "calt" 0; 
+      font-variation-settings: normal;
+       line-height: 19px;
+       letter-spacing: 0px;
+       width: 327px;
+       height: 300px
+} */
